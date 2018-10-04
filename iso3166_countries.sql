@@ -1,0 +1,281 @@
+/*
+ Navicat MySQL Data Transfer
+
+ Target Server Type    : MySQL
+ Target Server Version : 50723
+ File Encoding         : 65001
+
+ Date: 02/10/2018 08:48:07
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for iso3166_countries
+-- ----------------------------
+DROP TABLE IF EXISTS `iso3166_countries`;
+CREATE TABLE `iso3166_countries`  (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `label` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `alpha_2` varchar(2) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `alpha_3` varchar(3) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `region` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `sub_region` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 250 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of iso3166_countries
+-- ----------------------------
+INSERT INTO `iso3166_countries` VALUES (1, 'Afghanistan', 'AF', 'AFG', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (2, 'Aland Islands', 'AX', 'ALA', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (3, 'Albania', 'AL', 'ALB', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (4, 'Algeria', 'DZ', 'DZA', 'Africa', 'Northern Africa');
+INSERT INTO `iso3166_countries` VALUES (5, 'American Samoa', 'AS', 'ASM', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (6, 'Andorra', 'AD', 'AND', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (7, 'Angola', 'AO', 'AGO', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (8, 'Anguilla', 'AI', 'AIA', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (9, 'Antarctica', 'AQ', 'ATA', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (10, 'Antigua and Barbuda', 'AG', 'ATG', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (11, 'Argentina', 'AR', 'ARG', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (12, 'Armenia', 'AM', 'ARM', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (13, 'Aruba', 'AW', 'ABW', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (14, 'Australia', 'AU', 'AUS', 'Oceania', 'Australia and New Zealand');
+INSERT INTO `iso3166_countries` VALUES (15, 'Austria', 'AT', 'AUT', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (16, 'Azerbaijan', 'AZ', 'AZE', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (17, 'Bahamas', 'BS', 'BHS', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (18, 'Bahrain', 'BH', 'BHR', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (19, 'Bangladesh', 'BD', 'BGD', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (20, 'Barbados', 'BB', 'BRB', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (21, 'Belarus', 'BY', 'BLR', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (22, 'Belgium', 'BE', 'BEL', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (23, 'Belize', 'BZ', 'BLZ', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (24, 'Benin', 'BJ', 'BEN', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (25, 'Bermuda', 'BM', 'BMU', 'Americas', 'Northern America');
+INSERT INTO `iso3166_countries` VALUES (26, 'Bhutan', 'BT', 'BTN', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (27, 'Bolivia (Plurinational State of)', 'BO', 'BOL', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (28, 'Bonaire, Sint Eustatius and Saba', 'BQ', 'BES', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (29, 'Bosnia and Herzegovina', 'BA', 'BIH', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (30, 'Botswana', 'BW', 'BWA', 'Africa', 'Southern Africa');
+INSERT INTO `iso3166_countries` VALUES (31, 'Bouvet Island', 'BV', 'BVT', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (32, 'Brazil', 'BR', 'BRA', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (33, 'British Indian Ocean Territory', 'IO', 'IOT', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (34, 'Brunei Darussalam', 'BN', 'BRN', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (35, 'Bulgaria', 'BG', 'BGR', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (36, 'Burkina Faso', 'BF', 'BFA', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (37, 'Burundi', 'BI', 'BDI', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (38, 'Cambodia', 'KH', 'KHM', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (39, 'Cameroon', 'CM', 'CMR', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (40, 'Canada', 'CA', 'CAN', 'Americas', 'Northern America');
+INSERT INTO `iso3166_countries` VALUES (41, 'Cabo Verde', 'CV', 'CPV', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (42, 'Cayman Islands', 'KY', 'CYM', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (43, 'Central African Republic', 'CF', 'CAF', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (44, 'Chad', 'TD', 'TCD', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (45, 'Chile', 'CL', 'CHL', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (46, 'China', 'CN', 'CHN', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (47, 'Christmas Island', 'CX', 'CXR', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (48, 'Cocos (Keeling) Islands', 'CC', 'CCK', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (49, 'Colombia', 'CO', 'COL', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (50, 'Comoros', 'KM', 'COM', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (51, 'Congo', 'CG', 'COG', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (52, 'Congo (Democratic Republic of the)', 'CD', 'COD', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (53, 'Cook Islands', 'CK', 'COK', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (54, 'Costa Rica', 'CR', 'CRI', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (55, 'Cote d\'Ivoire', 'CI', 'CIV', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (56, 'Croatia', 'HR', 'HRV', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (57, 'Cuba', 'CU', 'CUB', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (58, 'Curacao', 'CW', 'CUW', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (59, 'Cyprus', 'CY', 'CYP', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (60, 'Czech Republic', 'CZ', 'CZE', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (61, 'Denmark', 'DK', 'DNK', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (62, 'Djibouti', 'DJ', 'DJI', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (63, 'Dominica', 'DM', 'DMA', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (64, 'Dominican Republic', 'DO', 'DOM', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (65, 'Ecuador', 'EC', 'ECU', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (66, 'Egypt', 'EG', 'EGY', 'Africa', 'Northern Africa');
+INSERT INTO `iso3166_countries` VALUES (67, 'El Salvador', 'SV', 'SLV', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (68, 'Equatorial Guinea', 'GQ', 'GNQ', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (69, 'Eritrea', 'ER', 'ERI', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (70, 'Estonia', 'EE', 'EST', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (71, 'Ethiopia', 'ET', 'ETH', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (72, 'Falkland Islands (Malvinas)', 'FK', 'FLK', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (73, 'Faroe Islands', 'FO', 'FRO', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (74, 'Fiji', 'FJ', 'FJI', 'Oceania', 'Melanesia');
+INSERT INTO `iso3166_countries` VALUES (75, 'Finland', 'FI', 'FIN', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (76, 'France', 'FR', 'FRA', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (77, 'French Guiana', 'GF', 'GUF', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (78, 'French Polynesia', 'PF', 'PYF', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (79, 'French Southern Territories', 'TF', 'ATF', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (80, 'Gabon', 'GA', 'GAB', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (81, 'Gambia', 'GM', 'GMB', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (82, 'Georgia', 'GE', 'GEO', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (83, 'Germany', 'DE', 'DEU', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (84, 'Ghana', 'GH', 'GHA', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (85, 'Gibraltar', 'GI', 'GIB', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (86, 'Greece', 'GR', 'GRC', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (87, 'Greenland', 'GL', 'GRL', 'Americas', 'Northern America');
+INSERT INTO `iso3166_countries` VALUES (88, 'Grenada', 'GD', 'GRD', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (89, 'Guadeloupe', 'GP', 'GLP', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (90, 'Guam', 'GU', 'GUM', 'Oceania', 'Micronesia');
+INSERT INTO `iso3166_countries` VALUES (91, 'Guatemala', 'GT', 'GTM', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (92, 'Guernsey', 'GG', 'GGY', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (93, 'Guinea', 'GN', 'GIN', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (94, 'Guinea-Bissau', 'GW', 'GNB', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (95, 'Guyana', 'GY', 'GUY', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (96, 'Haiti', 'HT', 'HTI', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (97, 'Heard Island and McDonald Islands', 'HM', 'HMD', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (98, 'Holy See', 'VA', 'VAT', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (99, 'Honduras', 'HN', 'HND', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (100, 'Hong Kong', 'HK', 'HKG', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (101, 'Hungary', 'HU', 'HUN', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (102, 'Iceland', 'IS', 'ISL', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (103, 'India', 'IN', 'IND', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (104, 'Indonesia', 'ID', 'IDN', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (105, 'Iran (Islamic Republic of)', 'IR', 'IRN', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (106, 'Iraq', 'IQ', 'IRQ', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (107, 'Ireland', 'IE', 'IRL', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (108, 'Isle of Man', 'IM', 'IMN', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (109, 'Israel', 'IL', 'ISR', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (110, 'Italy', 'IT', 'ITA', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (111, 'Jamaica', 'JM', 'JAM', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (112, 'Japan', 'JP', 'JPN', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (113, 'Jersey', 'JE', 'JEY', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (114, 'Jordan', 'JO', 'JOR', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (115, 'Kazakhstan', 'KZ', 'KAZ', 'Asia', 'Central Asia');
+INSERT INTO `iso3166_countries` VALUES (116, 'Kenya', 'KE', 'KEN', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (117, 'Kiribati', 'KI', 'KIR', 'Oceania', 'Micronesia');
+INSERT INTO `iso3166_countries` VALUES (118, 'Korea (Democratic People\'s Republic of)', 'KP', 'PRK', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (119, 'Korea (Republic of)', 'KR', 'KOR', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (120, 'Kuwait', 'KW', 'KWT', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (121, 'Kyrgyzstan', 'KG', 'KGZ', 'Asia', 'Central Asia');
+INSERT INTO `iso3166_countries` VALUES (122, 'Lao People\'s Democratic Republic', 'LA', 'LAO', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (123, 'Latvia', 'LV', 'LVA', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (124, 'Lebanon', 'LB', 'LBN', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (125, 'Lesotho', 'LS', 'LSO', 'Africa', 'Southern Africa');
+INSERT INTO `iso3166_countries` VALUES (126, 'Liberia', 'LR', 'LBR', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (127, 'Libya', 'LY', 'LBY', 'Africa', 'Northern Africa');
+INSERT INTO `iso3166_countries` VALUES (128, 'Liechtenstein', 'LI', 'LIE', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (129, 'Lithuania', 'LT', 'LTU', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (130, 'Luxembourg', 'LU', 'LUX', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (131, 'Macao', 'MO', 'MAC', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (132, 'Macedonia (the former Yugoslav Republic of)', 'MK', 'MKD', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (133, 'Madagascar', 'MG', 'MDG', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (134, 'Malawi', 'MW', 'MWI', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (135, 'Malaysia', 'MY', 'MYS', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (136, 'Maldives', 'MV', 'MDV', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (137, 'Mali', 'ML', 'MLI', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (138, 'Malta', 'MT', 'MLT', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (139, 'Marshall Islands', 'MH', 'MHL', 'Oceania', 'Micronesia');
+INSERT INTO `iso3166_countries` VALUES (140, 'Martinique', 'MQ', 'MTQ', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (141, 'Mauritania', 'MR', 'MRT', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (142, 'Mauritius', 'MU', 'MUS', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (143, 'Mayotte', 'YT', 'MYT', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (144, 'Mexico', 'MX', 'MEX', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (145, 'Micronesia (Federated States of)', 'FM', 'FSM', 'Oceania', 'Micronesia');
+INSERT INTO `iso3166_countries` VALUES (146, 'Moldova (Republic of)', 'MD', 'MDA', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (147, 'Monaco', 'MC', 'MCO', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (148, 'Mongolia', 'MN', 'MNG', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (149, 'Montenegro', 'ME', 'MNE', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (150, 'Montserrat', 'MS', 'MSR', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (151, 'Morocco', 'MA', 'MAR', 'Africa', 'Northern Africa');
+INSERT INTO `iso3166_countries` VALUES (152, 'Mozambique', 'MZ', 'MOZ', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (153, 'Myanmar', 'MM', 'MMR', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (154, 'Namibia', 'NA', 'NAM', 'Africa', 'Southern Africa');
+INSERT INTO `iso3166_countries` VALUES (155, 'Nauru', 'NR', 'NRU', 'Oceania', 'Micronesia');
+INSERT INTO `iso3166_countries` VALUES (156, 'Nepal', 'NP', 'NPL', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (157, 'Netherlands', 'NL', 'NLD', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (158, 'New Caledonia', 'NC', 'NCL', 'Oceania', 'Melanesia');
+INSERT INTO `iso3166_countries` VALUES (159, 'New Zealand', 'NZ', 'NZL', 'Oceania', 'Australia and New Zealand');
+INSERT INTO `iso3166_countries` VALUES (160, 'Nicaragua', 'NI', 'NIC', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (161, 'Niger', 'NE', 'NER', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (162, 'Nigeria', 'NG', 'NGA', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (163, 'Niue', 'NU', 'NIU', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (164, 'Norfolk Island', 'NF', 'NFK', 'Oceania', 'Australia and New Zealand');
+INSERT INTO `iso3166_countries` VALUES (165, 'Northern Mariana Islands', 'MP', 'MNP', 'Oceania', 'Micronesia');
+INSERT INTO `iso3166_countries` VALUES (166, 'Norway', 'NO', 'NOR', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (167, 'Oman', 'OM', 'OMN', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (168, 'Pakistan', 'PK', 'PAK', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (169, 'Palau', 'PW', 'PLW', 'Oceania', 'Micronesia');
+INSERT INTO `iso3166_countries` VALUES (170, 'Palestine, State of', 'PS', 'PSE', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (171, 'Panama', 'PA', 'PAN', 'Americas', 'Central America');
+INSERT INTO `iso3166_countries` VALUES (172, 'Papua New Guinea', 'PG', 'PNG', 'Oceania', 'Melanesia');
+INSERT INTO `iso3166_countries` VALUES (173, 'Paraguay', 'PY', 'PRY', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (174, 'Peru', 'PE', 'PER', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (175, 'Philippines', 'PH', 'PHL', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (176, 'Pitcairn', 'PN', 'PCN', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (177, 'Poland', 'PL', 'POL', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (178, 'Portugal', 'PT', 'PRT', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (179, 'Puerto Rico', 'PR', 'PRI', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (180, 'Qatar', 'QA', 'QAT', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (181, 'Reunion', 'RE', 'REU', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (182, 'Romania', 'RO', 'ROU', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (183, 'Russian Federation', 'RU', 'RUS', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (184, 'Rwanda', 'RW', 'RWA', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (185, 'Saint Barthelemy', 'BL', 'BLM', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (186, 'Saint Helena, Ascension and Tristan da Cunha', 'SH', 'SHN', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (187, 'Saint Kitts and Nevis', 'KN', 'KNA', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (188, 'Saint Lucia', 'LC', 'LCA', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (189, 'Saint Martin (French part)', 'MF', 'MAF', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (190, 'Saint Pierre and Miquelon', 'PM', 'SPM', 'Americas', 'Northern America');
+INSERT INTO `iso3166_countries` VALUES (191, 'Saint Vincent and the Grenadines', 'VC', 'VCT', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (192, 'Samoa', 'WS', 'WSM', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (193, 'San Marino', 'SM', 'SMR', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (194, 'Sao Tome and Principe', 'ST', 'STP', 'Africa', 'Middle Africa');
+INSERT INTO `iso3166_countries` VALUES (195, 'Saudi Arabia', 'SA', 'SAU', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (196, 'Senegal', 'SN', 'SEN', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (197, 'Serbia', 'RS', 'SRB', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (198, 'Seychelles', 'SC', 'SYC', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (199, 'Sierra Leone', 'SL', 'SLE', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (200, 'Singapore', 'SG', 'SGP', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (201, 'Sint Maarten (Dutch part)', 'SX', 'SXM', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (202, 'Slovakia', 'SK', 'SVK', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (203, 'Slovenia', 'SI', 'SVN', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (204, 'Solomon Islands', 'SB', 'SLB', 'Oceania', 'Melanesia');
+INSERT INTO `iso3166_countries` VALUES (205, 'Somalia', 'SO', 'SOM', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (206, 'South Africa', 'ZA', 'ZAF', 'Africa', 'Southern Africa');
+INSERT INTO `iso3166_countries` VALUES (207, 'South Georgia and the South Sandwich Islands', 'GS', 'SGS', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (208, 'South Sudan', 'SS', 'SSD', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (209, 'Spain', 'ES', 'ESP', 'Europe', 'Southern Europe');
+INSERT INTO `iso3166_countries` VALUES (210, 'Sri Lanka', 'LK', 'LKA', 'Asia', 'Southern Asia');
+INSERT INTO `iso3166_countries` VALUES (211, 'Sudan', 'SD', 'SDN', 'Africa', 'Northern Africa');
+INSERT INTO `iso3166_countries` VALUES (212, 'Suriname', 'SR', 'SUR', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (213, 'Svalbard and Jan Mayen', 'SJ', 'SJM', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (214, 'Swaziland', 'SZ', 'SWZ', 'Africa', 'Southern Africa');
+INSERT INTO `iso3166_countries` VALUES (215, 'Sweden', 'SE', 'SWE', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (216, 'Switzerland', 'CH', 'CHE', 'Europe', 'Western Europe');
+INSERT INTO `iso3166_countries` VALUES (217, 'Syrian Arab Republic', 'SY', 'SYR', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (218, 'Taiwan, Province of China', 'TW', 'TWN', 'Asia', 'Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (219, 'Tajikistan', 'TJ', 'TJK', 'Asia', 'Central Asia');
+INSERT INTO `iso3166_countries` VALUES (220, 'Tanzania, United Republic of', 'TZ', 'TZA', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (221, 'Thailand', 'TH', 'THA', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (222, 'Timor-Leste', 'TL', 'TLS', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (223, 'Togo', 'TG', 'TGO', 'Africa', 'Western Africa');
+INSERT INTO `iso3166_countries` VALUES (224, 'Tokelau', 'TK', 'TKL', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (225, 'Tonga', 'TO', 'TON', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (226, 'Trinidad and Tobago', 'TT', 'TTO', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (227, 'Tunisia', 'TN', 'TUN', 'Africa', 'Northern Africa');
+INSERT INTO `iso3166_countries` VALUES (228, 'Turkey', 'TR', 'TUR', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (229, 'Turkmenistan', 'TM', 'TKM', 'Asia', 'Central Asia');
+INSERT INTO `iso3166_countries` VALUES (230, 'Turks and Caicos Islands', 'TC', 'TCA', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (231, 'Tuvalu', 'TV', 'TUV', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (232, 'Uganda', 'UG', 'UGA', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (233, 'Ukraine', 'UA', 'UKR', 'Europe', 'Eastern Europe');
+INSERT INTO `iso3166_countries` VALUES (234, 'United Arab Emirates', 'AE', 'ARE', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (235, 'United Kingdom of Great Britain and Northern Ireland', 'GB', 'GBR', 'Europe', 'Northern Europe');
+INSERT INTO `iso3166_countries` VALUES (236, 'United States of America', 'US', 'USA', 'Americas', 'Northern America');
+INSERT INTO `iso3166_countries` VALUES (237, 'United States Minor Outlying Islands', 'UM', 'UMI', NULL, NULL);
+INSERT INTO `iso3166_countries` VALUES (238, 'Uruguay', 'UY', 'URY', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (239, 'Uzbekistan', 'UZ', 'UZB', 'Asia', 'Central Asia');
+INSERT INTO `iso3166_countries` VALUES (240, 'Vanuatu', 'VU', 'VUT', 'Oceania', 'Melanesia');
+INSERT INTO `iso3166_countries` VALUES (241, 'Venezuela (Bolivarian Republic of)', 'VE', 'VEN', 'Americas', 'South America');
+INSERT INTO `iso3166_countries` VALUES (242, 'Viet Nam', 'VN', 'VNM', 'Asia', 'South-Eastern Asia');
+INSERT INTO `iso3166_countries` VALUES (243, 'Virgin Islands (British)', 'VG', 'VGB', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (244, 'Virgin Islands (U.S.)', 'VI', 'VIR', 'Americas', 'Caribbean');
+INSERT INTO `iso3166_countries` VALUES (245, 'Wallis and Futuna', 'WF', 'WLF', 'Oceania', 'Polynesia');
+INSERT INTO `iso3166_countries` VALUES (246, 'Western Sahara', 'EH', 'ESH', 'Africa', 'Northern Africa');
+INSERT INTO `iso3166_countries` VALUES (247, 'Yemen', 'YE', 'YEM', 'Asia', 'Western Asia');
+INSERT INTO `iso3166_countries` VALUES (248, 'Zambia', 'ZM', 'ZMB', 'Africa', 'Eastern Africa');
+INSERT INTO `iso3166_countries` VALUES (249, 'Zimbabwe', 'ZW', 'ZWE', 'Africa', 'Eastern Africa');
+
+SET FOREIGN_KEY_CHECKS = 1;
