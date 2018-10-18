@@ -6,8 +6,8 @@
     "license": "MIT",
     "repositories": [
         {
-            "type": "vcs",
-            "url":  "https://wdarton@bitbucket.org/wdarton/cakephp3-acl-manager.git"
+            "type": "git",
+            "url":  "https://github.com/wdarton/cakephp3-acl-manager"
 
         }
     ],
